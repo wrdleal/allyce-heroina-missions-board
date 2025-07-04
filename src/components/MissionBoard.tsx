@@ -8,53 +8,53 @@ const weekDays = [
 
 const missions = {
   'Segunda': [
-    { icon: '✏️', title: 'Desenho mágico', description: 'lápis e papel' },
-    { icon: '🧠', title: 'Jogo da memória', description: 'cartas e cérebro sorrindo' },
-    { icon: '🧸', title: 'Guardar brinquedos', description: 'caixa e ursinho' },
-    { icon: '⭐', title: 'Ir ao banheiro', description: 'vaso e estrelinha' },
-    { icon: '📚', title: 'História de fada', description: 'livro e varinha mágica' }
+    { icon: '✏️', title: 'Desenho mágico', description: 'Pegue lápis e papel e desenhe algo que te deixa feliz' },
+    { icon: '🧠', title: 'Jogo da memória', description: 'Vire as cartas e encontre os pares iguais' },
+    { icon: '🧸', title: 'Guardar brinquedos', description: 'Coloque cada brinquedo em seu lugar na caixa' },
+    { icon: '⭐', title: 'Ir ao banheiro', description: 'Vá ao banheiro quando sentir vontade, peça ajuda se precisar' },
+    { icon: '📚', title: 'História de fada', description: 'Escolha um livro e imagine ser a fada corajosa da história' }
   ],
   'Terça': [
-    { icon: '🐠', title: 'Vídeo do peixinho', description: 'peixinho com bolhas' },
-    { icon: '💖', title: 'Ajudar a vovó', description: 'coração e vovó sorrindo' },
-    { icon: '🛏️', title: 'Arrumar o quarto', description: 'cama e travesseiro' },
-    { icon: '🪆', title: 'Explorar com boneca', description: 'boneca e estrelinha' },
-    { icon: '💃', title: 'Dança livre', description: 'notas musicais' }
+    { icon: '🐠', title: 'Vídeo do peixinho', description: 'Assista o vídeo e respire como o peixinho para ficar calma' },
+    { icon: '💖', title: 'Ajudar a vovó', description: 'Faça algo carinhoso para ajudar a vovó no que ela precisar' },
+    { icon: '🛏️', title: 'Arrumar o quarto', description: 'Organize a cama e coloque o travesseiro no lugar' },
+    { icon: '🪆', title: 'Explorar com boneca', description: 'Passeie pelo quarto com sua boneca e conte o que vê' },
+    { icon: '💃', title: 'Dança livre', description: 'Coloque uma música e dance do jeito que quiser' }
   ],
   'Quarta': [
-    { icon: '☁️', title: 'Soprinho da calma', description: 'nuvem e sopro' },
-    { icon: '🎨', title: 'Massinha mágica', description: 'mãos e massinha colorida' },
-    { icon: '🪆', title: 'Banheiro com boneca', description: 'vaso e boneca' },
-    { icon: '💡', title: 'Luz mágica', description: 'abajur com brilho' },
-    { icon: '📖', title: 'Guardar livros', description: 'prateleira e livrinhos' }
+    { icon: '☁️', title: 'Soprinho da calma', description: 'Respire fundo e sopre devagarzinho como uma nuvem' },
+    { icon: '🎨', title: 'Massinha mágica', description: 'Use as mãos para modelar formas coloridas na massinha' },
+    { icon: '🪆', title: 'Banheiro com boneca', description: 'Leve sua bonequinha e vão juntas ao banheiro' },
+    { icon: '💡', title: 'Luz mágica', description: 'Acenda uma luz especial que te ajuda a relaxar para dormir' },
+    { icon: '📖', title: 'Guardar livros', description: 'Organize os livrinhos na prateleira com cuidado' }
   ],
   'Quinta': [
-    { icon: '🏃', title: 'Circuito obstáculos', description: 'cones e criança pulando' },
-    { icon: '🔍', title: 'Missão cômodos', description: 'lupa e pegadas' },
-    { icon: '🛡️', title: 'Pintar escudo', description: 'escudo e pincel' },
-    { icon: '🔦', title: 'História lanterna', description: 'lanterna e estrelas' },
-    { icon: '🧹', title: 'Ajudar a limpar', description: 'vassoura mágica' }
+    { icon: '🏃', title: 'Circuito obstáculos', description: 'Pule, contorne e passe pelos obstáculos como uma heroína' },
+    { icon: '🔍', title: 'Missão cômodos', description: 'Explore os cômodos da casa como uma detetive corajosa' },
+    { icon: '🛡️', title: 'Pintar escudo', description: 'Decore seu escudo mágico com cores e desenhos especiais' },
+    { icon: '🔦', title: 'História lanterna', description: 'Use a lanterna para contar histórias no escuro com estrelas' },
+    { icon: '🧹', title: 'Ajudar a limpar', description: 'Use a vassoura mágica para ajudar a deixar tudo limpinho' }
   ],
   'Sexta': [
-    { icon: '😊', title: 'Colagem medômetro', description: 'cola e carinhas' },
-    { icon: '👸', title: 'Princesa valente', description: 'princesa e dragão' },
-    { icon: '💝', title: 'Pote da coragem', description: 'pote com corações' },
-    { icon: '📺', title: 'Filminho cobertor', description: 'tela e cobertor' },
-    { icon: '👕', title: 'Ajudar com roupas', description: 'camiseta e cesto' }
+    { icon: '😊', title: 'Colagem medômetro', description: 'Cole carinhas que mostram como você está se sentindo' },
+    { icon: '👸', title: 'Princesa valente', description: 'Conte a história da princesa que foi corajosa contra o dragão' },
+    { icon: '💝', title: 'Pote da coragem', description: 'Coloque coisas que te dão coragem dentro do pote especial' },
+    { icon: '📺', title: 'Filminho cobertor', description: 'Assista um filme gostoso embaixo do cobertor quentinho' },
+    { icon: '👕', title: 'Ajudar com roupas', description: 'Separe as roupas e coloque no cesto organizadamente' }
   ],
   'Sábado': [
-    { icon: '🦸‍♀️', title: 'Aventura heroína', description: 'capa e estrela' },
-    { icon: '🌳', title: 'Caminhada vovó', description: 'árvore e pegadas' },
-    { icon: '🚪', title: 'Explorar cantinho', description: 'porta e lanterna' },
-    { icon: '🏠', title: 'Pintura lugar seguro', description: 'tinta e casinha' },
-    { icon: '🤲', title: 'Guardar toalhinhas', description: 'toalha e mãos' }
+    { icon: '🦸‍♀️', title: 'Aventura heroína', description: 'Vista sua capa e seja a heroína em uma aventura imaginária' },
+    { icon: '🌳', title: 'Caminhada vovó', description: 'Caminhe ao ar livre com a vovó observando a natureza' },
+    { icon: '🚪', title: 'Explorar cantinho', description: 'Descubra um cantinho novo da casa com sua lanterna' },
+    { icon: '🏠', title: 'Pintura lugar seguro', description: 'Desenhe e pinte uma casinha que é seu lugar seguro' },
+    { icon: '🤲', title: 'Guardar toalhinhas', description: 'Dobre e organize as toalhinhas com as mãozinhas' }
   ],
   'Domingo': [
-    { icon: '😄', title: 'Roda da gratidão', description: 'carinhas felizes' },
-    { icon: '🛁', title: 'Banho encantado', description: 'banheira e bolhas' },
-    { icon: '💬', title: 'Conversa família', description: 'balões de fala' },
-    { icon: '🌙', title: 'Música calma', description: 'notas musicais e lua' },
-    { icon: '👔', title: 'Pijama mágico', description: 'pijama com estrelinhas' }
+    { icon: '😄', title: 'Roda da gratidão', description: 'Conte 3 coisas que te deixaram feliz durante a semana' },
+    { icon: '🛁', title: 'Banho encantado', description: 'Tome banho brincando com as bolhas mágicas' },
+    { icon: '💬', title: 'Conversa família', description: 'Conte para a família sobre seus momentos especiais' },
+    { icon: '🌙', title: 'Música calma', description: 'Escute uma música suave olhando para a lua antes de dormir' },
+    { icon: '👔', title: 'Pijama mágico', description: 'Escolha um pijama com estrelinhas para ter sonhos bonitos' }
   ]
 };
 
