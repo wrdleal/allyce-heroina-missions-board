@@ -8,53 +8,53 @@ const weekDays = [
 
 const missions = {
   'Segunda': [
-    { icon: '✏️', title: 'Desenho mágico', description: 'Pegue lápis e papel e desenhe algo que te deixa feliz' },
-    { icon: '🧠', title: 'Jogo da memória', description: 'Vire as cartas e encontre os pares iguais' },
-    { icon: '🧸', title: 'Guardar brinquedos', description: 'Coloque cada brinquedo em seu lugar na caixa' },
-    { icon: '⭐', title: 'Ir ao banheiro', description: 'Vá ao banheiro quando sentir vontade, peça ajuda se precisar' },
-    { icon: '📚', title: 'História de fada', description: 'Escolha um livro e imagine ser a fada corajosa da história' }
+    { icon: '✏️', title: 'Desenho mágico', description: 'Você consegue desenhar sozinha! Escolha suas cores favoritas e crie' },
+    { icon: '🧠', title: 'Jogo da memória', description: 'Seja corajosa! Vire as cartas e use sua memória poderosa' },
+    { icon: '🧸', title: 'Guardar brinquedos', description: 'Mostre sua força organizando tudo sozinha no lugar certo' },
+    { icon: '⭐', title: 'Ir ao banheiro', description: 'Você é independente! Vá sozinha quando sentir vontade' },
+    { icon: '📚', title: 'História de fada', description: 'Seja corajosa como a fada da história! Você também é forte' }
   ],
   'Terça': [
-    { icon: '🐠', title: 'Vídeo do peixinho', description: 'Assista o vídeo e respire como o peixinho para ficar calma' },
-    { icon: '💖', title: 'Ajudar a vovó', description: 'Faça algo carinhoso para ajudar a vovó no que ela precisar' },
-    { icon: '🛏️', title: 'Arrumar o quarto', description: 'Organize a cama e coloque o travesseiro no lugar' },
-    { icon: '🪆', title: 'Explorar com boneca', description: 'Passeie pelo quarto com sua boneca e conte o que vê' },
-    { icon: '💃', title: 'Dança livre', description: 'Coloque uma música e dance do jeito que quiser' }
+    { icon: '🐠', title: 'Vídeo do peixinho', description: 'Respire com calma sozinha, você consegue se acalmar' },
+    { icon: '💖', title: 'Ajudar a vovó', description: 'Mostre sua gentileza ajudando por iniciativa própria' },
+    { icon: '🛏️', title: 'Arrumar o quarto', description: 'Você é capaz! Organize sua cama sozinha como uma heroína' },
+    { icon: '🪆', title: 'Explorar com boneca', description: 'Seja aventureira! Explore corajosamente cada cantinho' },
+    { icon: '💃', title: 'Dança livre', description: 'Dance sem medo! Solte-se e mostre seus movimentos' }
   ],
   'Quarta': [
-    { icon: '☁️', title: 'Soprinho da calma', description: 'Respire fundo e sopre devagarzinho como uma nuvem' },
-    { icon: '🎨', title: 'Massinha mágica', description: 'Use as mãos para modelar formas coloridas na massinha' },
-    { icon: '🪆', title: 'Banheiro com boneca', description: 'Leve sua bonequinha e vão juntas ao banheiro' },
-    { icon: '💡', title: 'Luz mágica', description: 'Acenda uma luz especial que te ajuda a relaxar para dormir' },
-    { icon: '📖', title: 'Guardar livros', description: 'Organize os livrinhos na prateleira com cuidado' }
+    { icon: '☁️', title: 'Soprinho da calma', description: 'Você tem o poder de se acalmar sozinha respirando devagar' },
+    { icon: '🎨', title: 'Massinha mágica', description: 'Crie sozinha! Suas mãos fazem magia na massinha' },
+    { icon: '🪆', title: 'Banheiro com boneca', description: 'Vá corajosamente, você e sua boneca são fortes juntas' },
+    { icon: '💡', title: 'Luz mágica', description: 'Você consegue se preparar para dormir sozinha com sua luz' },
+    { icon: '📖', title: 'Guardar livros', description: 'Organize independentemente cada livrinho em seu lugar' }
   ],
   'Quinta': [
-    { icon: '🏃', title: 'Circuito obstáculos', description: 'Pule, contorne e passe pelos obstáculos como uma heroína' },
-    { icon: '🔍', title: 'Missão cômodos', description: 'Explore os cômodos da casa como uma detetive corajosa' },
-    { icon: '🛡️', title: 'Pintar escudo', description: 'Decore seu escudo mágico com cores e desenhos especiais' },
-    { icon: '🔦', title: 'História lanterna', description: 'Use a lanterna para contar histórias no escuro com estrelas' },
-    { icon: '🧹', title: 'Ajudar a limpar', description: 'Use a vassoura mágica para ajudar a deixar tudo limpinho' }
+    { icon: '🏃', title: 'Circuito obstáculos', description: 'Seja destemida! Enfrente cada obstáculo com coragem' },
+    { icon: '🔍', title: 'Missão cômodos', description: 'Explore sozinha como uma detetive corajosa e curiosa' },
+    { icon: '🛡️', title: 'Pintar escudo', description: 'Decore seu escudo da coragem, você é uma guerreira!' },
+    { icon: '🔦', title: 'História lanterna', description: 'Você é corajosa no escuro! Use sua lanterna mágica' },
+    { icon: '🧹', title: 'Ajudar a limpar', description: 'Mostre sua independência ajudando sozinha a organizar' }
   ],
   'Sexta': [
-    { icon: '😊', title: 'Colagem medômetro', description: 'Cole carinhas que mostram como você está se sentindo' },
-    { icon: '👸', title: 'Princesa valente', description: 'Conte a história da princesa que foi corajosa contra o dragão' },
-    { icon: '💝', title: 'Pote da coragem', description: 'Coloque coisas que te dão coragem dentro do pote especial' },
-    { icon: '📺', title: 'Filminho cobertor', description: 'Assista um filme gostoso embaixo do cobertor quentinho' },
-    { icon: '👕', title: 'Ajudar com roupas', description: 'Separe as roupas e coloque no cesto organizadamente' }
+    { icon: '😊', title: 'Colagem medômetro', description: 'Mostre como você é corajosa colando suas conquistas' },
+    { icon: '👸', title: 'Princesa valente', description: 'Você é como a princesa: corajosa e pode tudo sozinha!' },
+    { icon: '💝', title: 'Pote da coragem', description: 'Coloque sozinha tudo que te faz sentir corajosa' },
+    { icon: '📺', title: 'Filminho cobertor', description: 'Você consegue se aconchegar sozinha e relaxar' },
+    { icon: '👕', title: 'Ajudar com roupas', description: 'Seja independente organizando as roupinhas sozinha' }
   ],
   'Sábado': [
-    { icon: '🦸‍♀️', title: 'Aventura heroína', description: 'Vista sua capa e seja a heroína em uma aventura imaginária' },
-    { icon: '🌳', title: 'Caminhada vovó', description: 'Caminhe ao ar livre com a vovó observando a natureza' },
-    { icon: '🚪', title: 'Explorar cantinho', description: 'Descubra um cantinho novo da casa com sua lanterna' },
-    { icon: '🏠', title: 'Pintura lugar seguro', description: 'Desenhe e pinte uma casinha que é seu lugar seguro' },
-    { icon: '🤲', title: 'Guardar toalhinhas', description: 'Dobre e organize as toalhinhas com as mãozinhas' }
+    { icon: '🦸‍♀️', title: 'Aventura heroína', description: 'Vista sua capa e seja a heroína corajosa que você é!' },
+    { icon: '🌳', title: 'Caminhada vovó', description: 'Caminhe confiante explorando o mundo ao seu redor' },
+    { icon: '🚪', title: 'Explorar cantinho', description: 'Seja destemida descobrindo novos espaços sozinha' },
+    { icon: '🏠', title: 'Pintura lugar seguro', description: 'Crie sozinha seu cantinho especial onde se sente forte' },
+    { icon: '🤲', title: 'Guardar toalhinhas', description: 'Mostre sua habilidade dobrando tudo organizadamente' }
   ],
   'Domingo': [
-    { icon: '😄', title: 'Roda da gratidão', description: 'Conte 3 coisas que te deixaram feliz durante a semana' },
-    { icon: '🛁', title: 'Banho encantado', description: 'Tome banho brincando com as bolhas mágicas' },
-    { icon: '💬', title: 'Conversa família', description: 'Conte para a família sobre seus momentos especiais' },
-    { icon: '🌙', title: 'Música calma', description: 'Escute uma música suave olhando para a lua antes de dormir' },
-    { icon: '👔', title: 'Pijama mágico', description: 'Escolha um pijama com estrelinhas para ter sonhos bonitos' }
+    { icon: '😄', title: 'Roda da gratidão', description: 'Fale sozinha sobre tudo que te deixou corajosa esta semana' },
+    { icon: '🛁', title: 'Banho encantado', description: 'Você consegue se cuidar sozinha brincando na água' },
+    { icon: '💬', title: 'Conversa família', description: 'Conte com confiança sobre suas conquistas corajosas' },
+    { icon: '🌙', title: 'Música calma', description: 'Você consegue relaxar sozinha ouvindo sua música' },
+    { icon: '👔', title: 'Pijama mágico', description: 'Escolha sozinha seu pijama especial para sonhos de heroína' }
   ]
 };
 
