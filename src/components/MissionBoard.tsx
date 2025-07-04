@@ -122,13 +122,22 @@ const MissionBoard = () => {
 
       {/* Footer */}
       <div className="text-center mt-8 print:mt-4">
-        <div className="bg-gradient-sunshine p-4 rounded-2xl shadow-soft max-w-md mx-auto">
+        <div className="bg-gradient-sunshine p-4 rounded-2xl shadow-soft max-w-md mx-auto mb-4">
           <p className="text-foreground font-bold text-lg">
             🌟 Você é uma Super Heroína! 🌟
           </p>
           <p className="text-sm text-muted-foreground mt-1">
             Cada missão completa te deixa mais corajosa!
           </p>
+        </div>
+        
+        <div className="mt-6">
+          <a 
+            href="/print" 
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-xl font-semibold shadow-soft transition-all duration-300 hover:shadow-magic"
+          >
+            🖨️ Versão para Impressão
+          </a>
         </div>
       </div>
     </div>
