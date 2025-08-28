@@ -8,8 +8,8 @@ const weekDays = [
   '💫 Quarta - Mente Tranquila', 
   '🌟 Quinta - Estrela da Responsabilidade', 
   '🎨 Sexta - Criativa e Organizada', 
-  '🌻 Sábado - Exploradora da Natureza', 
-  '💖 Domingo - Família Unida'
+  '🌻 Sábado - Dia Livre', 
+  '💖 Domingo - Dia Livre'
 ];
 
 const missions = {
@@ -18,49 +18,50 @@ const missions = {
     { icon: '📝', title: 'Diário dos sentimentos', description: 'desenhar como me sinto hoje' },
     { icon: '🧹', title: 'Organizar meu cantinho', description: 'arrumar mesa de estudos e brinquedos' },
     { icon: '🍽️', title: 'Ajudar na cozinha', description: 'colocar os pratos na mesa para o almoço' },
-    { icon: '📚', title: 'Leitura tranquila', description: 'ler um livro no meu lugar favorito' }
+    { icon: '📚', title: 'Leitura tranquila', description: 'ler um livro no meu lugar favorito' },
+    { icon: '🙏', title: 'Gratidão da semana', description: 'compartilhar 3 coisas boas que aconteceram' }
   ],
   '🏠 Terça - Ajudante Especial': [
     { icon: '🧽', title: 'Missão limpeza', description: 'limpar a mesa depois das refeições' },
     { icon: '👕', title: 'Organizar roupas', description: 'dobrar e guardar minhas roupas no guarda-roupa' },
     { icon: '🌱', title: 'Cuidar das plantas', description: 'regar as plantinhas da casa' },
     { icon: '🧘', title: 'Momento zen', description: 'fazer alongamento quando me sentir agitada' },
-    { icon: '🎒', title: 'Preparar mochila', description: 'organizar material escolar para amanhã' }
+    { icon: '🎒', title: 'Preparar mochila', description: 'organizar material escolar para amanhã' },
+    { icon: '🌳', title: 'Caminhada observadora', description: 'passear e observar árvores e flores' }
   ],
   '💫 Quarta - Mente Tranquila': [
     { icon: '🎵', title: 'Música relaxante', description: 'ouvir música calma por 10 minutos' },
     { icon: '🧊', title: 'Técnica do gelo', description: 'segurar um cubo de gelo quando estiver ansiosa' },
     { icon: '🍴', title: 'Ajudante da cozinha', description: 'ajudar a mamãe a preparar o lanche' },
     { icon: '📖', title: 'Contar histórias', description: 'inventar uma história para os brinquedos' },
-    { icon: '🧸', title: 'Organizar brinquedos', description: 'separar brinquedos por categoria' }
+    { icon: '🧸', title: 'Organizar brinquedos', description: 'separar brinquedos por categoria' },
+    { icon: '🪴', title: 'Jardinagem', description: 'plantar sementes ou cuidar do jardim' }
   ],
   '🌟 Quinta - Estrela da Responsabilidade': [
     { icon: '🛏️', title: 'Fazer minha cama', description: 'arrumar cama sozinha toda manhã' },
     { icon: '🧺', title: 'Roupas sujas', description: 'colocar roupas usadas no cesto' },
     { icon: '✋', title: 'Técnica das 5 coisas', description: 'nomear 5 coisas que vejo quando me sinto nervosa' },
     { icon: '🍎', title: 'Preparar lanche', description: 'ajudar a embalar meu lanche escolar' },
-    { icon: '📚', title: 'Hora do dever', description: 'fazer lição de casa no horário certo' }
+    { icon: '📚', title: 'Hora do dever', description: 'fazer lição de casa no horário certo' },
+    { icon: '🍽️', title: 'Cozinhar juntos', description: 'ajudar a preparar as refeições' }
   ],
   '🎨 Sexta - Criativa e Organizada': [
     { icon: '🎨', title: 'Arte da ansiedade', description: 'desenhar ou pintar quando me sentir preocupada' },
     { icon: '👞', title: 'Organizar sapatos', description: 'alinhar todos os sapatos da família' },
     { icon: '📦', title: 'Caixinha da calma', description: 'organizar objetos que me tranquilizam' },
     { icon: '🧹', title: 'Varrer com mamãe', description: 'ajudar a varrer a cozinha' },
-    { icon: '🎭', title: 'Teatro das emoções', description: 'representar diferentes sentimentos' }
+    { icon: '🎭', title: 'Teatro das emoções', description: 'representar diferentes sentimentos' },
+    { icon: '🗨️', title: 'Roda de sentimentos', description: 'conversar sobre como me senti esta semana' }
   ],
-  '🌻 Sábado - Exploradora da Natureza': [
-    { icon: '🌳', title: 'Caminhada observadora', description: 'passear e observar árvores e flores' },
-    { icon: '🪴', title: 'Jardinagem', description: 'plantar sementes ou cuidar do jardim' },
-    { icon: '🏡', title: 'Limpar varanda', description: 'ajudar a organizar área externa' },
-    { icon: '🦋', title: 'Caça ao tesouro', description: 'procurar objetos na natureza' },
-    { icon: '📸', title: 'Álbum da natureza', description: 'desenhar ou fotografar plantas e animais' }
+  '🌻 Sábado - Dia Livre': [
+    { icon: '🌈', title: 'Tempo livre', description: 'brincar do que quiser!' },
+    { icon: '🛋️', title: 'Descansar', description: 'relaxar e não fazer nada' },
+    { icon: '🎮', title: 'Diversão', description: 'escolher sua atividade favorita' }
   ],
-  '💖 Domingo - Família Unida': [
-    { icon: '🙏', title: 'Gratidão da semana', description: 'compartilhar 3 coisas boas que aconteceram' },
-    { icon: '🍽️', title: 'Cozinhar juntos', description: 'ajudar a preparar o almoço de domingo' },
-    { icon: '🗨️', title: 'Roda de sentimentos', description: 'conversar sobre como me senti esta semana' },
-    { icon: '🧹', title: 'Limpeza geral', description: 'escolher um cômodo para organizar com a família' },
-    { icon: '🎲', title: 'Jogos em família', description: 'escolher e organizar um jogo para todos' }
+  '💖 Domingo - Dia Livre': [
+    { icon: '😴', title: 'Dormir mais', description: 'acordar na hora que quiser' },
+    { icon: '🎪', title: 'Brincadeira livre', description: 'inventar suas próprias brincadeiras' },
+    { icon: '🤗', title: 'Tempo em família', description: 'curtir momentos especiais juntos' }
   ]
 };
 
