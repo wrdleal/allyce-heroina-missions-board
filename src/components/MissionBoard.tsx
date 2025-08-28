@@ -3,64 +3,64 @@ import { Badge } from "@/components/ui/badge";
 import heroMaria from "@/assets/hero-maria.png";
 
 const weekDays = [
-  '🌞 Segunda - Super Sensibilidade', 
-  '🌈 Terça - Peixinho da Calma', 
-  '💎 Quarta - Mente Brilhante', 
-  '🛡 Quinta - Escudo Mágico', 
-  '✨ Sexta - Pote da Coragem', 
-  '🌳 Sábado - Aventura ao Ar Livre', 
-  '💗 Domingo - Família Protetora'
+  '🌈 Segunda - Respiração da Calma', 
+  '🏠 Terça - Ajudante Especial', 
+  '💫 Quarta - Mente Tranquila', 
+  '🌟 Quinta - Estrela da Responsabilidade', 
+  '🎨 Sexta - Criativa e Organizada', 
+  '🌻 Sábado - Exploradora da Natureza', 
+  '💖 Domingo - Família Unida'
 ];
 
 const missions = {
-  '🌞 Segunda - Super Sensibilidade': [
-    { icon: '✏️', title: 'Desenho mágico', description: '"Como me sinto hoje?"' },
-    { icon: '🧠', title: 'Jogo da memória da heroína', description: 'para treinar o foco' },
-    { icon: '🧽', title: 'Missão do dia', description: 'ajudar a mamãe a guardar os brinquedos' },
-    { icon: '🚽', title: 'Treino corajoso', description: 'ir ao banheiro com a varinha da coragem' },
-    { icon: '🧚', title: 'Histórias de fada valente', description: 'enfrentando monstros do quarto' }
+  '🌈 Segunda - Respiração da Calma': [
+    { icon: '🫁', title: 'Exercício da respiração', description: 'respirar fundo 5 vezes quando sentir ansiedade' },
+    { icon: '📝', title: 'Diário dos sentimentos', description: 'desenhar como me sinto hoje' },
+    { icon: '🧹', title: 'Organizar meu cantinho', description: 'arrumar mesa de estudos e brinquedos' },
+    { icon: '🍽️', title: 'Ajudar na cozinha', description: 'colocar os pratos na mesa para o almoço' },
+    { icon: '📚', title: 'Leitura tranquila', description: 'ler um livro no meu lugar favorito' }
   ],
-  '🌈 Terça - Peixinho da Calma': [
-    { icon: '🐠', title: 'Assistir ao vídeo', description: '"Acalme o seu filho" (Peixinho respirando)' },
-    { icon: '💖', title: 'Ajudar a vovó', description: 'a colocar a mesa ou dobrar paninhos' },
-    { icon: '🛏', title: 'Arrumar o quartinho', description: 'com a capa de super-heroína' },
-    { icon: '🧸', title: 'Explorar o quarto', description: 'com a boneca guardiã da coragem' },
-    { icon: '🎶', title: 'Dança livre das emoções', description: 'sorriso, força, calma e amor' }
+  '🏠 Terça - Ajudante Especial': [
+    { icon: '🧽', title: 'Missão limpeza', description: 'limpar a mesa depois das refeições' },
+    { icon: '👕', title: 'Organizar roupas', description: 'dobrar e guardar minhas roupas no guarda-roupa' },
+    { icon: '🌱', title: 'Cuidar das plantas', description: 'regar as plantinhas da casa' },
+    { icon: '🧘', title: 'Momento zen', description: 'fazer alongamento quando me sentir agitada' },
+    { icon: '🎒', title: 'Preparar mochila', description: 'organizar material escolar para amanhã' }
   ],
-  '💎 Quarta - Mente Brilhante': [
-    { icon: '🌬', title: 'Jogo da calma', description: 'soprar o vento para longe com a boca mágica' },
-    { icon: '✋', title: 'Hora da massinha mágica', description: 'criar monstrinhos do medo' },
-    { icon: '🚽', title: 'Banheiro com apoio', description: 'da bonequinha mágica + elogios' },
-    { icon: '💡', title: 'Luz mágica da segurança', description: 'para dormir sem sustos' },
-    { icon: '🧽', title: 'Missão da tarde', description: 'ajudar a guardar os livros ou sapatos' }
+  '💫 Quarta - Mente Tranquila': [
+    { icon: '🎵', title: 'Música relaxante', description: 'ouvir música calma por 10 minutos' },
+    { icon: '🧊', title: 'Técnica do gelo', description: 'segurar um cubo de gelo quando estiver ansiosa' },
+    { icon: '🍴', title: 'Ajudante da cozinha', description: 'ajudar a mamãe a preparar o lanche' },
+    { icon: '📖', title: 'Contar histórias', description: 'inventar uma história para os brinquedos' },
+    { icon: '🧸', title: 'Organizar brinquedos', description: 'separar brinquedos por categoria' }
   ],
-  '🛡 Quinta - Escudo Mágico': [
-    { icon: '🤸', title: 'Circuito de obstáculos', description: 'da coragem (pular, rastejar, equilibrar)' },
-    { icon: '🕵️', title: 'Missão dos cômodos', description: 'visitar lugares secretos da casa' },
-    { icon: '🎨', title: 'Pintar e decorar', description: 'o escudo mágico contra os medos' },
-    { icon: '📖', title: 'Histórias calmantes', description: 'com lanterna mágica' },
-    { icon: '🧹', title: 'Missão de limpeza', description: 'com a mamãe: passar o pano mágico' }
+  '🌟 Quinta - Estrela da Responsabilidade': [
+    { icon: '🛏️', title: 'Fazer minha cama', description: 'arrumar cama sozinha toda manhã' },
+    { icon: '🧺', title: 'Roupas sujas', description: 'colocar roupas usadas no cesto' },
+    { icon: '✋', title: 'Técnica das 5 coisas', description: 'nomear 5 coisas que vejo quando me sinto nervosa' },
+    { icon: '🍎', title: 'Preparar lanche', description: 'ajudar a embalar meu lanche escolar' },
+    { icon: '📚', title: 'Hora do dever', description: 'fazer lição de casa no horário certo' }
   ],
-  '✨ Sexta - Pote da Coragem': [
-    { icon: '✂️', title: 'Atividade com colagem', description: 'criar o "medômetro" (nível de medo)' },
-    { icon: '🐉', title: 'História da princesa valente', description: 'que enfrentou um dragão de pelúcia' },
-    { icon: '🎁', title: 'Adicionar um coração', description: 'no Pote da Coragem' },
-    { icon: '🎬', title: 'Sessão de cinema', description: 'com cobertor mágico e pipoca' },
-    { icon: '🌟', title: 'Missão da casa', description: 'ajudar a escolher as roupas ou calçados' }
+  '🎨 Sexta - Criativa e Organizada': [
+    { icon: '🎨', title: 'Arte da ansiedade', description: 'desenhar ou pintar quando me sentir preocupada' },
+    { icon: '👞', title: 'Organizar sapatos', description: 'alinhar todos os sapatos da família' },
+    { icon: '📦', title: 'Caixinha da calma', description: 'organizar objetos que me tranquilizam' },
+    { icon: '🧹', title: 'Varrer com mamãe', description: 'ajudar a varrer a cozinha' },
+    { icon: '🎭', title: 'Teatro das emoções', description: 'representar diferentes sentimentos' }
   ],
-  '🌳 Sábado - Aventura ao Ar Livre': [
-    { icon: '🦸', title: 'Brincar de "Super Maria"', description: 'no mundo dos desafios (com fantasia)' },
-    { icon: '🌿', title: 'Caminhar com a vovó', description: 'observando plantas, bichos e cheiros' },
-    { icon: '🧭', title: 'Explorar um novo cantinho', description: 'da casa com a "luz de fada"' },
-    { icon: '🎨', title: 'Pintura do lugar mais seguro', description: 'do mundo (feito por ela)' },
-    { icon: '🧦', title: 'Missão', description: 'ajudar a guardar roupas ou toalhinhas' }
+  '🌻 Sábado - Exploradora da Natureza': [
+    { icon: '🌳', title: 'Caminhada observadora', description: 'passear e observar árvores e flores' },
+    { icon: '🪴', title: 'Jardinagem', description: 'plantar sementes ou cuidar do jardim' },
+    { icon: '🏡', title: 'Limpar varanda', description: 'ajudar a organizar área externa' },
+    { icon: '🦋', title: 'Caça ao tesouro', description: 'procurar objetos na natureza' },
+    { icon: '📸', title: 'Álbum da natureza', description: 'desenhar ou fotografar plantas e animais' }
   ],
-  '💗 Domingo - Família Protetora': [
-    { icon: '🌞', title: 'Roda da gratidão', description: '"o que me fez feliz essa semana?"' },
-    { icon: '🛁', title: 'Banho das bolhas encantadas', description: 'com brinquedos favoritos' },
-    { icon: '🗣', title: 'Roda de conversa', description: 'com mamãe ou vovó sobre os sentimentos' },
-    { icon: '🎼', title: 'Música do peixinho', description: 'ou canção de ninar suave' },
-    { icon: '🧼', title: 'Ajudar a organizar', description: 'a cama e escolher o pijama mágico' }
+  '💖 Domingo - Família Unida': [
+    { icon: '🙏', title: 'Gratidão da semana', description: 'compartilhar 3 coisas boas que aconteceram' },
+    { icon: '🍽️', title: 'Cozinhar juntos', description: 'ajudar a preparar o almoço de domingo' },
+    { icon: '🗨️', title: 'Roda de sentimentos', description: 'conversar sobre como me senti esta semana' },
+    { icon: '🧹', title: 'Limpeza geral', description: 'escolher um cômodo para organizar com a família' },
+    { icon: '🎲', title: 'Jogos em família', description: 'escolher e organizar um jogo para todos' }
   ]
 };
 
@@ -72,15 +72,15 @@ const MissionBoard = () => {
         <div className="flex items-center justify-center gap-6 mb-4">
           <img 
             src={heroMaria} 
-            alt="Super Maria Allyce" 
+            alt="Super Sofia" 
             className="w-24 h-24 rounded-full shadow-magic border-4 border-primary"
           />
           <div>
             <h1 className="text-4xl font-bold bg-gradient-hero bg-clip-text text-transparent print:text-primary">
-              Missões da Super Maria Allyce
+              Missões da Super Sofia
             </h1>
             <p className="text-lg text-foreground/80 font-medium">
-              ⭐ Heroína Corajosa ⭐
+              ⭐ Estrela da Organização ⭐
             </p>
           </div>
         </div>
@@ -124,10 +124,10 @@ const MissionBoard = () => {
       <div className="text-center mt-8 print:mt-4">
         <div className="bg-gradient-sunshine p-4 rounded-2xl shadow-soft max-w-md mx-auto mb-4">
           <p className="text-foreground font-bold text-lg">
-            🌟 Você é uma Super Heroína! 🌟
+            🌟 Você é uma Super Estrela! 🌟
           </p>
           <p className="text-sm text-muted-foreground mt-1">
-            Cada missão completa te deixa mais corajosa!
+            Cada missão completa te deixa mais organizada e tranquila!
           </p>
         </div>
         
