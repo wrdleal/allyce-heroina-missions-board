@@ -85,13 +85,8 @@ const missions = {
   ]
 };
 
-// Organizando os dias em páginas para impressão
-const printPages = [
-  [weekDays[0], weekDays[1]], // Segunda e Terça
-  [weekDays[2], weekDays[3]], // Quarta e Quinta  
-  [weekDays[4], weekDays[5]], // Sexta e Sábado
-  [weekDays[6]]               // Domingo
-];
+// Cada dia em sua própria página para impressão
+const printPages = weekDays.slice(0, 5).map(day => [day]); // Segunda a Sexta, cada dia em sua própria página
 
 const PrintableMissionBoard = () => {
   const handlePrint = () => {
@@ -110,62 +105,60 @@ const PrintableMissionBoard = () => {
       {/* Páginas para impressão */}
       {printPages.map((pageDays, pageIndex) => (
         <div key={pageIndex} className="print-page">
-          {/* Header com a Maria em cada página */}
+          {/* Header compacto */}
           <div className="page-header">
-            <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="flex items-center justify-center gap-3 mb-4">
               <img 
                 src={heroArthur} 
                 alt="Super Arthur" 
-                className="w-16 h-16 rounded-full shadow-magic border-2 border-primary"
+                className="w-12 h-12 rounded-full shadow-magic border-2 border-primary"
               />
               <div className="text-center">
-                <h1 className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+                <h1 className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
                   Missões do Super Arthur
                 </h1>
-                <p className="text-sm text-foreground/80 font-medium">
+                <p className="text-xs text-foreground/80 font-medium">
                   🏆 Herói da Obediência 🏆
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Grid de missões da página */}
-          <div className={`grid gap-6 ${pageDays.length === 1 ? 'grid-cols-1 justify-center' : 'grid-cols-2'}`}>
-            {pageDays.map((day) => (
-              <Card key={day} className="p-4 bg-card/90 shadow-soft border-2 border-primary/20">
-                <div className="text-center mb-4">
-                  <Badge variant="secondary" className="text-base font-bold px-4 py-2 bg-gradient-hero text-white">
-                    {day}
-                  </Badge>
-                </div>
-                
-                <div className="space-y-3">
-                  {missions[day as keyof typeof missions].map((mission, missionIndex) => (
-                    <div 
-                      key={missionIndex}
-                      className="flex items-center gap-3 p-3 rounded-xl bg-muted/50 border border-accent/30"
-                    >
-                      <div className="text-xl flex-shrink-0 w-6 h-6 flex items-center justify-center">
-                        {mission.icon}
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-semibold text-sm text-foreground leading-tight">
-                          {mission.title}
-                        </h3>
-                        <p className="text-xs text-muted-foreground mt-1">
-                          {mission.description}
-                        </p>
-                      </div>
+          {/* Conteúdo do dia */}
+          {pageDays.map((day) => (
+            <div key={day} className="flex-1">
+              <div className="text-center mb-4">
+                <Badge variant="secondary" className="text-lg font-bold px-6 py-2 bg-gradient-hero text-white">
+                  {day}
+                </Badge>
+              </div>
+              
+              <div className="grid grid-cols-2 gap-3">
+                {missions[day as keyof typeof missions].map((mission, missionIndex) => (
+                  <div 
+                    key={missionIndex}
+                    className="flex items-center gap-2 p-2 rounded-lg bg-muted/50 border border-accent/30"
+                  >
+                    <div className="text-lg flex-shrink-0 w-6 h-6 flex items-center justify-center">
+                      {mission.icon}
                     </div>
-                  ))}
-                </div>
-              </Card>
-            ))}
-          </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold text-xs text-foreground leading-tight">
+                        {mission.title}
+                      </h3>
+                      <p className="text-xs text-muted-foreground mt-0.5 leading-tight">
+                        {mission.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
 
-          {/* Footer em cada página */}
+          {/* Footer compacto */}
           <div className="page-footer">
-            <div className="bg-gradient-sunshine p-3 rounded-xl shadow-soft text-center">
+            <div className="bg-gradient-sunshine p-2 rounded-lg shadow-soft text-center">
               <p className="text-foreground font-bold text-sm">
                 🏆 Você é um Super Herói! 🏆
               </p>
@@ -186,10 +179,12 @@ const PrintableMissionBoard = () => {
           .print-page {
             page-break-after: always;
             page-break-inside: avoid;
-            min-height: 100vh;
-            padding: 20px;
+            height: 210mm;
+            width: 297mm;
+            padding: 15mm;
             display: flex;
             flex-direction: column;
+            box-sizing: border-box;
           }
           
           .print-page:last-child {
@@ -203,12 +198,12 @@ const PrintableMissionBoard = () => {
           .page-footer {
             flex-shrink: 0;
             margin-top: auto;
-            padding-top: 20px;
+            padding-top: 10px;
           }
           
           @page {
-            size: landscape;
-            margin: 15mm;
+            size: A4 landscape;
+            margin: 0;
           }
           
           * {
