@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import heroMaria from "@/assets/hero-maria.png";
+import heroArthur from "@/assets/hero-arthur.png";
 
 const weekDays = [
   '💙 Segunda - Herói Obediente', 
@@ -15,41 +15,60 @@ const weekDays = [
 
 const missions = {
   '💙 Segunda - Herói Obediente': [
+    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinho toda manhã' },
+    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinho' },
+    { icon: '🧹', title: 'Arrumar o quarto', description: 'deixar o quarto organizado' },
+    { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
+    { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
     { icon: '👂', title: 'Escutar a mamãe', description: 'prestar atenção quando a mamãe falar' },
     { icon: '🤐', title: 'Não responder mal', description: 'falar sempre com educação e carinho' },
     { icon: '🫁', title: 'Respiração da calma', description: 'respirar fundo 3 vezes quando irritado' },
-    { icon: '🛏️', title: 'Arrumar minha cama', description: 'fazer a cama sozinho toda manhã' },
     { icon: '🎯', title: 'Obedecer na primeira', description: 'fazer o que a mamãe pede logo na primeira vez' },
     { icon: '🏆', title: 'Pote de estrelas', description: 'ganhar uma estrela por cada boa ação' }
   ],
   '🏠 Terça - Ajudante da Mamãe': [
+    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinho toda manhã' },
+    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinho' },
+    { icon: '🧹', title: 'Arrumar o quarto', description: 'deixar o quarto organizado' },
+    { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
+    { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
     { icon: '🧽', title: 'Limpar a mesa', description: 'ajudar a limpar a mesa após as refeições' },
-    { icon: '👞', title: 'Guardar sapatos', description: 'organizar os sapatos da família' },
     { icon: '🧺', title: 'Roupas no cesto', description: 'colocar roupas sujas no lugar certo' },
     { icon: '🍽️', title: 'Pôr a mesa', description: 'ajudar a colocar pratos e talheres' },
     { icon: '💙', title: 'Pedir desculpas', description: 'falar "desculpa mamãe" quando errar' },
     { icon: '🌱', title: 'Cuidar das plantas', description: 'regar as plantinhas com a mamãe' }
   ],
   '📚 Quarta - Estudioso Responsável': [
+    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinho toda manhã' },
+    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinho' },
+    { icon: '🧹', title: 'Arrumar o quarto', description: 'deixar o quarto organizado' },
+    { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
+    { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
     { icon: '📖', title: 'Lição de casa', description: 'fazer o dever na mesa de estudos' },
     { icon: '✏️', title: 'Caprichar na letra', description: 'escrever bonito e com atenção' },
     { icon: '📚', title: 'Leitura diária', description: 'ler um livro por 20 minutos' },
-    { icon: '🎒', title: 'Organizar mochila', description: 'preparar material escolar sozinho' },
     { icon: '🧠', title: 'Estudar tabuada', description: 'praticar matemática 15 minutos' },
     { icon: '👨‍🏫', title: 'Obedecer professor', description: 'ser educado e atencioso na escola' }
   ],
   '⭐ Quinta - Organizador Campeão': [
+    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinho toda manhã' },
+    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinho' },
+    { icon: '🧹', title: 'Arrumar o quarto', description: 'deixar o quarto organizado' },
+    { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
     { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
     { icon: '👕', title: 'Dobrar roupas', description: 'ajudar a dobrar e guardar roupas' },
-    { icon: '🧹', title: 'Varrer o quarto', description: 'ajudar a limpar o próprio quarto' },
     { icon: '📱', title: 'Horário do tablet', description: 'usar eletrônicos só no horário permitido' },
     { icon: '🍎', title: 'Preparar lanche', description: 'ajudar a fazer o lanche escolar' },
     { icon: '💪', title: 'Ser responsável', description: 'cuidar das próprias coisas' }
   ],
   '🎯 Sexta - Focado e Disciplinado': [
+    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinho toda manhã' },
+    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinho' },
+    { icon: '🧹', title: 'Arrumar o quarto', description: 'deixar o quarto organizado' },
+    { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
+    { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
     { icon: '⏰', title: 'Cumprir horários', description: 'acordar e dormir no horário certo' },
     { icon: '🙋‍♂️', title: 'Ajudar sem pedir', description: 'oferecer ajuda para a mamãe' },
-    { icon: '🤝', title: 'Dividir brinquedos', description: 'emprestar brinquedos para irmãos' },
     { icon: '🧘', title: 'Momento zen', description: 'ficar 5 minutos quieto e calmo' },
     { icon: '🗣️', title: 'Falar a verdade', description: 'sempre contar a verdade para a mamãe' },
     { icon: '⭐', title: 'Semana campeã', description: 'revisar todas as conquistas da semana' }
@@ -95,7 +114,7 @@ const PrintableMissionBoard = () => {
           <div className="page-header">
             <div className="flex items-center justify-center gap-4 mb-6">
               <img 
-                src={heroMaria} 
+                src={heroArthur} 
                 alt="Super Arthur" 
                 className="w-16 h-16 rounded-full shadow-magic border-2 border-primary"
               />
