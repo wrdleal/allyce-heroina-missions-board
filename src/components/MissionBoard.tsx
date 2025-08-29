@@ -3,55 +3,55 @@ import { Badge } from "@/components/ui/badge";
 import heroMaria from "@/assets/hero-maria.png";
 
 const weekDays = [
-  '🌈 Segunda - Respiração da Calma', 
-  '🏠 Terça - Ajudante Especial', 
-  '💫 Quarta - Mente Tranquila', 
-  '🌟 Quinta - Estrela da Responsabilidade', 
-  '🎨 Sexta - Criativa e Organizada', 
+  '💙 Segunda - Herói Obediente', 
+  '🏠 Terça - Ajudante da Mamãe', 
+  '📚 Quarta - Estudioso Responsável', 
+  '⭐ Quinta - Organizador Campeão', 
+  '🎯 Sexta - Focado e Disciplinado', 
   '🌻 Sábado - Dia Livre', 
   '💖 Domingo - Dia Livre'
 ];
 
 const missions = {
-  '🌈 Segunda - Respiração da Calma': [
-    { icon: '🫁', title: 'Exercício da respiração', description: 'respirar fundo 5 vezes quando sentir ansiedade' },
-    { icon: '📝', title: 'Diário dos sentimentos', description: 'desenhar como me sinto hoje' },
-    { icon: '🧹', title: 'Organizar meu cantinho', description: 'arrumar mesa de estudos e brinquedos' },
-    { icon: '🍽️', title: 'Ajudar na cozinha', description: 'colocar os pratos na mesa para o almoço' },
-    { icon: '📚', title: 'Leitura tranquila', description: 'ler um livro no meu lugar favorito' },
-    { icon: '🙏', title: 'Gratidão da semana', description: 'compartilhar 3 coisas boas que aconteceram' }
+  '💙 Segunda - Herói Obediente': [
+    { icon: '👂', title: 'Escutar a mamãe', description: 'prestar atenção quando a mamãe falar' },
+    { icon: '🤐', title: 'Não responder mal', description: 'falar sempre com educação e carinho' },
+    { icon: '🫁', title: 'Respiração da calma', description: 'respirar fundo 3 vezes quando irritado' },
+    { icon: '🛏️', title: 'Arrumar minha cama', description: 'fazer a cama sozinho toda manhã' },
+    { icon: '🎯', title: 'Obedecer na primeira', description: 'fazer o que a mamãe pede logo na primeira vez' },
+    { icon: '🏆', title: 'Pote de estrelas', description: 'ganhar uma estrela por cada boa ação' }
   ],
-  '🏠 Terça - Ajudante Especial': [
-    { icon: '🧽', title: 'Missão limpeza', description: 'limpar a mesa depois das refeições' },
-    { icon: '👕', title: 'Organizar roupas', description: 'dobrar e guardar minhas roupas no guarda-roupa' },
-    { icon: '🌱', title: 'Cuidar das plantas', description: 'regar as plantinhas da casa' },
-    { icon: '🧘', title: 'Momento zen', description: 'fazer alongamento quando me sentir agitada' },
-    { icon: '🎒', title: 'Preparar mochila', description: 'organizar material escolar para amanhã' },
-    { icon: '🌳', title: 'Caminhada observadora', description: 'passear e observar árvores e flores' }
+  '🏠 Terça - Ajudante da Mamãe': [
+    { icon: '🧽', title: 'Limpar a mesa', description: 'ajudar a limpar a mesa após as refeições' },
+    { icon: '👞', title: 'Guardar sapatos', description: 'organizar os sapatos da família' },
+    { icon: '🧺', title: 'Roupas no cesto', description: 'colocar roupas sujas no lugar certo' },
+    { icon: '🍽️', title: 'Pôr a mesa', description: 'ajudar a colocar pratos e talheres' },
+    { icon: '💙', title: 'Pedir desculpas', description: 'falar "desculpa mamãe" quando errar' },
+    { icon: '🌱', title: 'Cuidar das plantas', description: 'regar as plantinhas com a mamãe' }
   ],
-  '💫 Quarta - Mente Tranquila': [
-    { icon: '🎵', title: 'Música relaxante', description: 'ouvir música calma por 10 minutos' },
-    { icon: '🧊', title: 'Técnica do gelo', description: 'segurar um cubo de gelo quando estiver ansiosa' },
-    { icon: '🍴', title: 'Ajudante da cozinha', description: 'ajudar a mamãe a preparar o lanche' },
-    { icon: '📖', title: 'Contar histórias', description: 'inventar uma história para os brinquedos' },
-    { icon: '🧸', title: 'Organizar brinquedos', description: 'separar brinquedos por categoria' },
-    { icon: '🪴', title: 'Jardinagem', description: 'plantar sementes ou cuidar do jardim' }
+  '📚 Quarta - Estudioso Responsável': [
+    { icon: '📖', title: 'Lição de casa', description: 'fazer o dever na mesa de estudos' },
+    { icon: '✏️', title: 'Caprichar na letra', description: 'escrever bonito e com atenção' },
+    { icon: '📚', title: 'Leitura diária', description: 'ler um livro por 20 minutos' },
+    { icon: '🎒', title: 'Organizar mochila', description: 'preparar material escolar sozinho' },
+    { icon: '🧠', title: 'Estudar tabuada', description: 'praticar matemática 15 minutos' },
+    { icon: '👨‍🏫', title: 'Obedecer professor', description: 'ser educado e atencioso na escola' }
   ],
-  '🌟 Quinta - Estrela da Responsabilidade': [
-    { icon: '🛏️', title: 'Fazer minha cama', description: 'arrumar cama sozinha toda manhã' },
-    { icon: '🧺', title: 'Roupas sujas', description: 'colocar roupas usadas no cesto' },
-    { icon: '✋', title: 'Técnica das 5 coisas', description: 'nomear 5 coisas que vejo quando me sinto nervosa' },
-    { icon: '🍎', title: 'Preparar lanche', description: 'ajudar a embalar meu lanche escolar' },
-    { icon: '📚', title: 'Hora do dever', description: 'fazer lição de casa no horário certo' },
-    { icon: '🍽️', title: 'Cozinhar juntos', description: 'ajudar a preparar as refeições' }
+  '⭐ Quinta - Organizador Campeão': [
+    { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
+    { icon: '👕', title: 'Dobrar roupas', description: 'ajudar a dobrar e guardar roupas' },
+    { icon: '🧹', title: 'Varrer o quarto', description: 'ajudar a limpar o próprio quarto' },
+    { icon: '📱', title: 'Horário do tablet', description: 'usar eletrônicos só no horário permitido' },
+    { icon: '🍎', title: 'Preparar lanche', description: 'ajudar a fazer o lanche escolar' },
+    { icon: '💪', title: 'Ser responsável', description: 'cuidar das próprias coisas' }
   ],
-  '🎨 Sexta - Criativa e Organizada': [
-    { icon: '🎨', title: 'Arte da ansiedade', description: 'desenhar ou pintar quando me sentir preocupada' },
-    { icon: '👞', title: 'Organizar sapatos', description: 'alinhar todos os sapatos da família' },
-    { icon: '📦', title: 'Caixinha da calma', description: 'organizar objetos que me tranquilizam' },
-    { icon: '🧹', title: 'Varrer com mamãe', description: 'ajudar a varrer a cozinha' },
-    { icon: '🎭', title: 'Teatro das emoções', description: 'representar diferentes sentimentos' },
-    { icon: '🗨️', title: 'Roda de sentimentos', description: 'conversar sobre como me senti esta semana' }
+  '🎯 Sexta - Focado e Disciplinado': [
+    { icon: '⏰', title: 'Cumprir horários', description: 'acordar e dormir no horário certo' },
+    { icon: '🙋‍♂️', title: 'Ajudar sem pedir', description: 'oferecer ajuda para a mamãe' },
+    { icon: '🤝', title: 'Dividir brinquedos', description: 'emprestar brinquedos para irmãos' },
+    { icon: '🧘', title: 'Momento zen', description: 'ficar 5 minutos quieto e calmo' },
+    { icon: '🗣️', title: 'Falar a verdade', description: 'sempre contar a verdade para a mamãe' },
+    { icon: '⭐', title: 'Semana campeã', description: 'revisar todas as conquistas da semana' }
   ],
   '🌻 Sábado - Dia Livre': [
     { icon: '🌈', title: 'Tempo livre', description: 'brincar do que quiser!' },
@@ -73,15 +73,15 @@ const MissionBoard = () => {
         <div className="flex items-center justify-center gap-6 mb-4">
           <img 
             src={heroMaria} 
-            alt="Super Sofia" 
+            alt="Super Arthur" 
             className="w-24 h-24 rounded-full shadow-magic border-4 border-primary"
           />
           <div>
             <h1 className="text-4xl font-bold bg-gradient-hero bg-clip-text text-transparent print:text-primary">
-              Missões da Super Sofia
+              Missões do Super Arthur
             </h1>
             <p className="text-lg text-foreground/80 font-medium">
-              ⭐ Estrela da Organização ⭐
+              🏆 Herói da Obediência 🏆
             </p>
           </div>
         </div>
@@ -125,10 +125,10 @@ const MissionBoard = () => {
       <div className="text-center mt-8 print:mt-4">
         <div className="bg-gradient-sunshine p-4 rounded-2xl shadow-soft max-w-md mx-auto mb-4">
           <p className="text-foreground font-bold text-lg">
-            🌟 Você é uma Super Estrela! 🌟
+            🏆 Você é um Super Herói! 🏆
           </p>
           <p className="text-sm text-muted-foreground mt-1">
-            Cada missão completa te deixa mais organizada e tranquila!
+            Cada missão completa te torna mais obediente e responsável!
           </p>
         </div>
         

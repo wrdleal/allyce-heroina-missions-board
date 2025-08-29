@@ -8,43 +8,43 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Base colors for Maria Allyce's mission board */
-    --background: 220 40% 98%;
-    --foreground: 320 30% 25%;
+    /* Base colors for Arthur's mission board */
+    --background: 210 40% 98%;
+    --foreground: 215 30% 25%;
 
-    --card: 340 80% 96%;
-    --card-foreground: 320 40% 20%;
+    --card: 210 60% 96%;
+    --card-foreground: 215 40% 20%;
 
-    --popover: 340 80% 98%;
-    --popover-foreground: 320 40% 20%;
+    --popover: 210 60% 98%;
+    --popover-foreground: 215 40% 20%;
 
-    /* Heroic pink theme */
-    --primary: 330 70% 60%;
+    /* Heroic blue theme */
+    --primary: 215 70% 55%;
     --primary-foreground: 0 0% 100%;
 
-    /* Soft lavender */
-    --secondary: 270 50% 85%;
-    --secondary-foreground: 320 40% 25%;
+    /* Soft sky blue */
+    --secondary: 200 50% 85%;
+    --secondary-foreground: 215 40% 25%;
 
-    /* Gentle yellow */
-    --muted: 45 80% 90%;
-    --muted-foreground: 320 30% 45%;
+    /* Light blue */
+    --muted: 210 80% 90%;
+    --muted-foreground: 215 30% 45%;
 
-    /* Sky blue accent */
-    --accent: 200 70% 80%;
-    --accent-foreground: 320 40% 25%;
+    /* Ocean blue accent */
+    --accent: 195 70% 75%;
+    --accent-foreground: 215 40% 25%;
 
     --destructive: 0 70% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Magic gradient backgrounds */
-    --gradient-hero: linear-gradient(135deg, hsl(330 70% 60%), hsl(270 50% 70%));
-    --gradient-sky: linear-gradient(180deg, hsl(200 70% 90%), hsl(220 60% 95%));
-    --gradient-sunshine: linear-gradient(45deg, hsl(45 80% 85%), hsl(60 70% 90%));
+    /* Blue gradient backgrounds */
+    --gradient-hero: linear-gradient(135deg, hsl(215 70% 55%), hsl(200 60% 65%));
+    --gradient-sky: linear-gradient(180deg, hsl(210 70% 88%), hsl(220 60% 92%));
+    --gradient-sunshine: linear-gradient(45deg, hsl(195 70% 80%), hsl(210 60% 85%));
     
-    /* Gentle shadows */
-    --shadow-soft: 0 4px 20px hsl(330 40% 80% / 0.3);
-    --shadow-magic: 0 8px 30px hsl(270 50% 70% / 0.4);
+    /* Blue shadows */
+    --shadow-soft: 0 4px 20px hsl(215 40% 70% / 0.3);
+    --shadow-magic: 0 8px 30px hsl(200 50% 65% / 0.4);
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
