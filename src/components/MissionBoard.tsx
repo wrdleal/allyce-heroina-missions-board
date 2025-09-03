@@ -20,9 +20,9 @@ const missions = {
     { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
     { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
     { icon: '🦷', title: 'Escovar os dentes', description: 'escovar bem os dentes após as refeições' },
-    { icon: '🧠', title: 'Exercício de foco', description: 'fazer uma atividade com atenção por 15 min' },
-    { icon: '💜', title: 'Dizer a verdade', description: 'sempre falar a verdade para a mamãe' },
-    { icon: '🫁', title: 'Respiração da calma', description: 'respirar fundo 5 vezes quando agitada' },
+    { icon: '🎯', title: 'Foco por 10 min', description: 'fazer uma tarefa só por 10 minutos sem parar' },
+    { icon: '⏰', title: 'Timer de atividades', description: 'usar cronômetro para organizar o tempo' },
+    { icon: '🫁', title: 'Técnica 4-7-8', description: 'respirar: 4 seg inspira, 7 seg segura, 8 seg solta' },
     { icon: '🏆', title: 'Pote de incentivo', description: 'ganhar uma estrela por cada boa ação' }
   ],
   '🌸 Terça - Ajudante da Vovó': [
@@ -33,8 +33,8 @@ const missions = {
     { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
     { icon: '🦷', title: 'Escovar os dentes', description: 'escovar bem os dentes após as refeições' },
     { icon: '👵', title: 'Ajudar a vovó', description: 'ajudar a vovó com tarefas simples' },
-    { icon: '📝', title: 'Dever de casa', description: 'fazer as tarefas com a vovó' },
-    { icon: '🤗', title: 'Abraço na mamãe', description: 'dar um abraço carinhoso na mamãe' },
+    { icon: '📝', title: 'Dever com vovó', description: 'fazer as tarefas escolares com a vovó' },
+    { icon: '📱', title: 'Videochamada mamãe', description: 'contar o dia para mamãe por vídeo' },
     { icon: '💧', title: 'Higiene pessoal', description: 'lavar as mãos e rosto quando necessário' }
   ],
   '📚 Quarta - Estudante Brilhante': [
@@ -44,10 +44,10 @@ const missions = {
     { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
     { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
     { icon: '🦷', title: 'Escovar os dentes', description: 'escovar bem os dentes após as refeições' },
-    { icon: '📖', title: 'Momento de leitura', description: 'ler por 20 minutos um livro interessante' },
-    { icon: '✏️', title: 'Atividades da escola', description: 'fazer tarefas escolares com concentração' },
-    { icon: '🧘‍♀️', title: 'Momento zen', description: 'ficar quieta e calma por 10 minutos' },
-    { icon: '💬', title: 'Conversar com mamãe', description: 'contar sobre o dia para a mamãe' }
+    { icon: '📖', title: 'Leitura concentrada', description: 'ler 15 min sem distrações' },
+    { icon: '✏️', title: 'Quebrar tarefas', description: 'dividir deveres grandes em partes pequenas' },
+    { icon: '🧘‍♀️', title: 'Mindfulness 5 min', description: 'exercício de atenção plena' },
+    { icon: '📚', title: 'Foto do dever', description: 'mandar foto do dever pronto para mamãe' }
   ],
   '⭐ Quinta - Organizadora Campeã': [
     { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinha toda manhã' },
@@ -57,9 +57,9 @@ const missions = {
     { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
     { icon: '🦷', title: 'Escovar os dentes', description: 'escovar bem os dentes após as refeições' },
     { icon: '🧼', title: 'Higiene completa', description: 'tomar banho e se cuidar bem' },
-    { icon: '⏰', title: 'Cumprir horários', description: 'seguir a rotina sem reclamar' },
-    { icon: '💪', title: 'Ser responsável', description: 'cuidar das próprias coisas' },
-    { icon: '❤️', title: 'Vínculo com mamãe', description: 'fazer uma atividade junto com a mamãe' }
+    { icon: '📋', title: 'Lista de tarefas', description: 'fazer checklist das atividades do dia' },
+    { icon: '🎨', title: 'Atividade criativa', description: '20 min de desenho ou artesanato' },
+    { icon: '💌', title: 'Carta para mamãe', description: 'escrever uma cartinha ou áudio para mamãe' }
   ],
   '🎯 Sexta - Disciplinada e Honesta': [
     { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinha toda manhã' },
@@ -68,10 +68,10 @@ const missions = {
     { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
     { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
     { icon: '🦷', title: 'Escovar os dentes', description: 'escovar bem os dentes após as refeições' },
-    { icon: '🌟', title: 'Falar sempre a verdade', description: 'ser honesta em todas as situações' },
-    { icon: '🤝', title: 'Cooperar sem brigar', description: 'aceitar regras sem fazer birra' },
-    { icon: '🗣️', title: 'Pedir desculpas', description: 'falar "desculpa" quando errar' },
-    { icon: '🏆', title: 'Revisar a semana', description: 'contar as conquistas da semana' }
+    { icon: '🌟', title: 'Praticar honestidade', description: 'contar a verdade mesmo quando é difícil' },
+    { icon: '🤝', title: 'Aceitar "não"', description: 'não fazer birra quando ouvir "não"' },
+    { icon: '🗣️', title: 'Pedir desculpas', description: 'reconhecer erros e pedir desculpas' },
+    { icon: '🎉', title: 'Celebrar conquistas', description: 'contar para mamãe por vídeo as vitórias da semana' }
   ],
   '🌻 Sábado - Dia Livre': [
     { icon: '🌈', title: 'Tempo livre', description: 'brincar do que quiser!' },
