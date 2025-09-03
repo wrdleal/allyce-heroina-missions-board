@@ -1,86 +1,89 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import heroArthur from "@/assets/hero-arthur.png";
+import heroAntonela from "@/assets/hero-antonela.png";
 
 const weekDays = [
-  '💙 Segunda - Herói Obediente', 
-  '🏠 Terça - Ajudante da Mamãe', 
-  '📚 Quarta - Estudioso Responsável', 
-  '⭐ Quinta - Organizador Campeão', 
-  '🎯 Sexta - Focado e Disciplinado', 
+  '💜 Segunda - Heroína Focada', 
+  '🌸 Terça - Ajudante da Vovó', 
+  '📚 Quarta - Estudante Brilhante', 
+  '⭐ Quinta - Organizadora Campeã', 
+  '🎯 Sexta - Disciplinada e Honesta', 
   '🌻 Sábado - Dia Livre', 
   '💖 Domingo - Dia Livre'
 ];
 
 const missions = {
-  '💙 Segunda - Herói Obediente': [
-    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinho toda manhã' },
-    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinho' },
+  '💜 Segunda - Heroína Focada': [
+    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinha toda manhã' },
+    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinha' },
     { icon: '🧹', title: 'Arrumar o quarto', description: 'deixar o quarto organizado' },
     { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
     { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
-    { icon: '👂', title: 'Escutar a mamãe', description: 'prestar atenção quando a mamãe falar' },
-    { icon: '🤐', title: 'Não responder mal', description: 'falar sempre com educação e carinho' },
-    { icon: '🫁', title: 'Respiração da calma', description: 'respirar fundo 3 vezes quando irritado' },
-    { icon: '🎯', title: 'Obedecer na primeira', description: 'fazer o que a mamãe pede logo na primeira vez' },
-    { icon: '🏆', title: 'Pote de estrelas', description: 'ganhar uma estrela por cada boa ação' }
+    { icon: '🦷', title: 'Escovar os dentes', description: 'escovar bem os dentes após as refeições' },
+    { icon: '🧠', title: 'Exercício de foco', description: 'fazer uma atividade com atenção por 15 min' },
+    { icon: '💜', title: 'Dizer a verdade', description: 'sempre falar a verdade para a mamãe' },
+    { icon: '🫁', title: 'Respiração da calma', description: 'respirar fundo 5 vezes quando agitada' },
+    { icon: '🏆', title: 'Pote de incentivo', description: 'ganhar uma estrela por cada boa ação' }
   ],
-  '🏠 Terça - Ajudante da Mamãe': [
-    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinho toda manhã' },
-    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinho' },
+  '🌸 Terça - Ajudante da Vovó': [
+    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinha toda manhã' },
+    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinha' },
     { icon: '🧹', title: 'Arrumar o quarto', description: 'deixar o quarto organizado' },
     { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
     { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
-    { icon: '🧽', title: 'Limpar a mesa', description: 'ajudar a limpar a mesa após as refeições' },
-    { icon: '🧺', title: 'Roupas no cesto', description: 'colocar roupas sujas no lugar certo' },
-    { icon: '🍽️', title: 'Pôr a mesa', description: 'ajudar a colocar pratos e talheres' },
-    { icon: '💙', title: 'Pedir desculpas', description: 'falar "desculpa mamãe" quando errar' },
-    { icon: '🌱', title: 'Cuidar das plantas', description: 'regar as plantinhas com a mamãe' }
+    { icon: '🦷', title: 'Escovar os dentes', description: 'escovar bem os dentes após as refeições' },
+    { icon: '👵', title: 'Ajudar a vovó', description: 'ajudar a vovó com tarefas simples' },
+    { icon: '📝', title: 'Dever de casa', description: 'fazer as tarefas com a vovó' },
+    { icon: '🤗', title: 'Abraço na mamãe', description: 'dar um abraço carinhoso na mamãe' },
+    { icon: '💧', title: 'Higiene pessoal', description: 'lavar as mãos e rosto quando necessário' }
   ],
-  '📚 Quarta - Estudioso Responsável': [
-    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinho toda manhã' },
-    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinho' },
+  '📚 Quarta - Estudante Brilhante': [
+    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinha toda manhã' },
+    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinha' },
     { icon: '🧹', title: 'Arrumar o quarto', description: 'deixar o quarto organizado' },
     { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
     { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
-    { icon: '📖', title: 'Lição de casa', description: 'fazer o dever na mesa de estudos' },
-    { icon: '✏️', title: 'Caprichar na letra', description: 'escrever bonito e com atenção' },
-    { icon: '📚', title: 'Leitura diária', description: 'ler um livro por 20 minutos' },
-    { icon: '🧠', title: 'Estudar tabuada', description: 'praticar matemática 15 minutos' },
-    { icon: '👨‍🏫', title: 'Obedecer professor', description: 'ser educado e atencioso na escola' }
+    { icon: '🦷', title: 'Escovar os dentes', description: 'escovar bem os dentes após as refeições' },
+    { icon: '📖', title: 'Momento de leitura', description: 'ler por 20 minutos um livro interessante' },
+    { icon: '✏️', title: 'Atividades da escola', description: 'fazer tarefas escolares com concentração' },
+    { icon: '🧘‍♀️', title: 'Momento zen', description: 'ficar quieta e calma por 10 minutos' },
+    { icon: '💬', title: 'Conversar com mamãe', description: 'contar sobre o dia para a mamãe' }
   ],
-  '⭐ Quinta - Organizador Campeão': [
-    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinho toda manhã' },
-    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinho' },
+  '⭐ Quinta - Organizadora Campeã': [
+    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinha toda manhã' },
+    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinha' },
     { icon: '🧹', title: 'Arrumar o quarto', description: 'deixar o quarto organizado' },
     { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
     { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
-    { icon: '👕', title: 'Dobrar roupas', description: 'ajudar a dobrar e guardar roupas' },
-    { icon: '📱', title: 'Horário do tablet', description: 'usar eletrônicos só no horário permitido' },
-    { icon: '🍎', title: 'Preparar lanche', description: 'ajudar a fazer o lanche escolar' },
-    { icon: '💪', title: 'Ser responsável', description: 'cuidar das próprias coisas' }
+    { icon: '🦷', title: 'Escovar os dentes', description: 'escovar bem os dentes após as refeições' },
+    { icon: '🧼', title: 'Higiene completa', description: 'tomar banho e se cuidar bem' },
+    { icon: '⏰', title: 'Cumprir horários', description: 'seguir a rotina sem reclamar' },
+    { icon: '💪', title: 'Ser responsável', description: 'cuidar das próprias coisas' },
+    { icon: '❤️', title: 'Vínculo com mamãe', description: 'fazer uma atividade junto com a mamãe' }
   ],
-  '🎯 Sexta - Focado e Disciplinado': [
-    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinho toda manhã' },
-    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinho' },
+  '🎯 Sexta - Disciplinada e Honesta': [
+    { icon: '🛏️', title: 'Arrumar a cama', description: 'fazer a cama sozinha toda manhã' },
+    { icon: '🎒', title: 'Arrumar a mochila', description: 'organizar material escolar sozinha' },
     { icon: '🧹', title: 'Arrumar o quarto', description: 'deixar o quarto organizado' },
     { icon: '👞', title: 'Organizar sapatos', description: 'guardar sapatos no lugar certo' },
     { icon: '🧸', title: 'Organizar brinquedos', description: 'guardar todos os brinquedos no lugar' },
-    { icon: '⏰', title: 'Cumprir horários', description: 'acordar e dormir no horário certo' },
-    { icon: '🙋‍♂️', title: 'Ajudar sem pedir', description: 'oferecer ajuda para a mamãe' },
-    { icon: '🧘', title: 'Momento zen', description: 'ficar 5 minutos quieto e calmo' },
-    { icon: '🗣️', title: 'Falar a verdade', description: 'sempre contar a verdade para a mamãe' },
-    { icon: '⭐', title: 'Semana campeã', description: 'revisar todas as conquistas da semana' }
+    { icon: '🦷', title: 'Escovar os dentes', description: 'escovar bem os dentes após as refeições' },
+    { icon: '🌟', title: 'Falar sempre a verdade', description: 'ser honesta em todas as situações' },
+    { icon: '🤝', title: 'Cooperar sem brigar', description: 'aceitar regras sem fazer birra' },
+    { icon: '🗣️', title: 'Pedir desculpas', description: 'falar "desculpa" quando errar' },
+    { icon: '🏆', title: 'Revisar a semana', description: 'contar as conquistas da semana' }
   ],
   '🌻 Sábado - Dia Livre': [
     { icon: '🌈', title: 'Tempo livre', description: 'brincar do que quiser!' },
     { icon: '🛋️', title: 'Descansar', description: 'relaxar e não fazer nada' },
-    { icon: '🎮', title: 'Diversão', description: 'escolher sua atividade favorita' }
+    { icon: '🎮', title: 'Diversão', description: 'escolher sua atividade favorita' },
+    { icon: '👨‍👩‍👧', title: 'Família', description: 'curtir tempo especial com a família' }
   ],
   '💖 Domingo - Dia Livre': [
     { icon: '😴', title: 'Dormir mais', description: 'acordar na hora que quiser' },
     { icon: '🎪', title: 'Brincadeira livre', description: 'inventar suas próprias brincadeiras' },
-    { icon: '🤗', title: 'Tempo em família', description: 'curtir momentos especiais juntos' }
+    { icon: '🤗', title: 'Tempo em família', description: 'curtir momentos especiais juntos' },
+    { icon: '🍰', title: 'Algo gostoso', description: 'comer algo especial no domingo' }
   ]
 };
 
@@ -90,19 +93,19 @@ const MissionBoard = () => {
       {/* Header with Hero */}
       <div className="text-center mb-8 print:mb-4">
         <div className="flex items-center justify-center gap-6 mb-4">
-          <img 
-            src={heroArthur} 
-            alt="Super Arthur" 
-            className="w-24 h-24 rounded-full shadow-magic border-4 border-primary"
-          />
-          <div>
-            <h1 className="text-4xl font-bold bg-gradient-hero bg-clip-text text-transparent print:text-primary">
-              Missões do Super Arthur
-            </h1>
-            <p className="text-lg text-foreground/80 font-medium">
-              🏆 Herói da Obediência 🏆
-            </p>
-          </div>
+            <img 
+              src={heroAntonela} 
+              alt="Super Antonela" 
+              className="w-24 h-24 rounded-full shadow-magic border-4 border-primary"
+            />
+            <div>
+              <h1 className="text-4xl font-bold bg-gradient-hero bg-clip-text text-transparent print:text-primary">
+                Missões da Super Antonela
+              </h1>
+              <p className="text-lg text-foreground/80 font-medium">
+                🏆 Heroína da Disciplina 🏆
+              </p>
+            </div>
         </div>
       </div>
 
@@ -144,10 +147,10 @@ const MissionBoard = () => {
       <div className="text-center mt-8 print:mt-4">
         <div className="bg-gradient-sunshine p-4 rounded-2xl shadow-soft max-w-md mx-auto mb-4">
           <p className="text-foreground font-bold text-lg">
-            🏆 Você é um Super Herói! 🏆
+            🏆 Você é uma Super Heroína! 🏆
           </p>
           <p className="text-sm text-muted-foreground mt-1">
-            Cada missão completa te torna mais obediente e responsável!
+            Cada missão completa te torna mais focada e responsável!
           </p>
         </div>
         

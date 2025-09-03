@@ -18,33 +18,33 @@ All colors MUST be HSL.
     --popover: 210 60% 98%;
     --popover-foreground: 215 40% 20%;
 
-    /* Heroic blue theme */
-    --primary: 215 70% 55%;
+    /* Heroic pink theme */
+    --primary: 320 65% 55%;
     --primary-foreground: 0 0% 100%;
 
-    /* Soft sky blue */
-    --secondary: 200 50% 85%;
-    --secondary-foreground: 215 40% 25%;
+    /* Soft lavender */
+    --secondary: 290 50% 85%;
+    --secondary-foreground: 320 40% 25%;
 
-    /* Light blue */
-    --muted: 210 80% 90%;
-    --muted-foreground: 215 30% 45%;
+    /* Light pink */
+    --muted: 320 60% 90%;
+    --muted-foreground: 320 30% 45%;
 
-    /* Ocean blue accent */
-    --accent: 195 70% 75%;
-    --accent-foreground: 215 40% 25%;
+    /* Rose pink accent */
+    --accent: 310 70% 75%;
+    --accent-foreground: 320 40% 25%;
 
     --destructive: 0 70% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Blue gradient backgrounds */
-    --gradient-hero: linear-gradient(135deg, hsl(215 70% 55%), hsl(200 60% 65%));
-    --gradient-sky: linear-gradient(180deg, hsl(210 70% 88%), hsl(220 60% 92%));
-    --gradient-sunshine: linear-gradient(45deg, hsl(195 70% 80%), hsl(210 60% 85%));
+    /* Pink gradient backgrounds */
+    --gradient-hero: linear-gradient(135deg, hsl(320 65% 55%), hsl(310 60% 65%));
+    --gradient-sky: linear-gradient(180deg, hsl(320 50% 88%), hsl(330 40% 92%));
+    --gradient-sunshine: linear-gradient(45deg, hsl(290 60% 80%), hsl(310 50% 85%));
     
-    /* Blue shadows */
-    --shadow-soft: 0 4px 20px hsl(215 40% 70% / 0.3);
-    --shadow-magic: 0 8px 30px hsl(200 50% 65% / 0.4);
+    /* Pink shadows */
+    --shadow-soft: 0 4px 20px hsl(320 40% 70% / 0.3);
+    --shadow-magic: 0 8px 30px hsl(310 50% 65% / 0.4);
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
